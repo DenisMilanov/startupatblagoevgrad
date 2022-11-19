@@ -1,0 +1,46 @@
+.conf2021 {
+    background-color: #000e17; /*#000f1b;*/
+    color: white;
+}
+
+.conf2021 .poster {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+/* Parallax */
+
+.parallax-wrapper {
+    background-color: #000e17;
+}
+
+.parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+}
+
+.cover {
+    position: absolute;
+    background-color: #000e17;
+    width: 100%;
+    min-height: 100vh;
+    top: max(100vw, 100vh);
+}
+
+.conf2021 .confButton {
+    background-color: #005f7f;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 100;
+}
+
+.conf2021 .confButton:hover {
+    background-color: #049aa5;
+    cursor: pointer;
+}

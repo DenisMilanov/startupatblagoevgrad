@@ -1,0 +1,91 @@
+.navbar {
+  background: #f8f9fa !important;
+  text-align: center;
+  border-bottom: 4px solid;
+  border-width: 0px 0px 4px 0px; /*for safari and iphones*/
+  border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
+}
+
+.navbar-light .navbar-toggler {
+  border: none !important;
+}
+
+.bg-flag {
+  border: 1px solid grey;
+}
+
+/*.apply-button:hover {
+  text-decoration: none;
+}*/
+
+.nav-link {
+  color: black !important;
+  font-weight: 600;
+}
+
+.lang-button:hover {
+  text-decoration: none !important;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  color: black !important;
+}
+
+.navbar-brand:hover, .nav-link:hover{
+  cursor: pointer;
+}
+
+.navbar-nav > .active > span{
+  border-bottom: 3px solid;
+  border-width: 0px 0px 3px 0px; 
+  border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%,#731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
+}
+
+@media (max-width: 1200px) { 
+  .nav-link{
+    font-size: 6vh !important;
+  }
+  .navbar-nav > .active > span{
+    border-width: 0px 0px 6px 0px;
+  }
+}
+
+@media (max-width: 500px) { 
+  .nav-link-en{
+    font-size: 4.7vh !important;
+  }
+  .nav-link-bg{
+    font-size: 8vw !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .navbar-brand > img {
+    height: 25px;
+    width: 25px;
+  }
+  .navbar-brand {
+    font-size: 17px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar-brand > img {
+    height: 20px;
+    width: 20px;
+  }
+  .navbar-brand {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 325px) {
+  .navbar-brand > img {
+    height: 20px;
+    width: 20px;
+  }
+  .navbar-brand {
+    font-size: 13px !important;
+  }
+}

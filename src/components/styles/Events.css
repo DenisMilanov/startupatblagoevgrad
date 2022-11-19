@@ -1,0 +1,147 @@
+.events {
+    overflow-x: hidden;
+}
+
+.events-title {
+    margin-top: 1em;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.events-title span{
+    border-bottom: 4px solid;
+    border-width: 0px 0px 4px 0px; 
+    border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
+}
+
+.events .flex-container {
+    padding: 1em;
+}
+
+.events-body {
+    font-size: 1.17em;
+}
+
+@media (max-width: 576px) { 
+    .events-body {
+        margin-top: 1em;
+    }
+}
+
+/* spaghetti starts here */
+
+/* everything except iPhones */
+@supports not (-webkit-touch-callout: none) {
+    .events .bg {
+        background-attachment: fixed;
+        width: 100%;
+        height: 35em;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Safari 10.0+ */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+    .events .bg {
+        background-attachment: scroll;
+    }
+}}
+
+/* iPhones */
+@supports (-webkit-touch-callout: none) {
+    .events section {
+        position: relative;
+        width: 100%;
+        height: 35em;
+    }
+    
+    .events .bg-wrap {
+        clip: rect(0, auto, auto, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .events .bg {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        transform: translateZ(0);
+        will-change: transform;
+    }
+}
+
+@media (min-width: 576px) {
+    .events .flex-container {
+        padding: 2em 5em;
+    }
+}
+
+.conf-img {
+    height: 20em;
+    width: auto;
+    border-radius: 10px;
+}
+
+.video-weekend2019 {
+    border-radius: 10px;
+}
+
+.video-wrapper {
+    height: 12em;
+    width: 20em;
+}
+
+@media (max-width: 576px) {
+    .video-wrapper {
+        width: 90vw;
+        margin: 1em;
+    }
+    .conf-img {
+        width: 70vw;
+        height: auto;
+        margin: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-wrapper {
+        margin-bottom: 2em;
+    }
+}
+
+@media (min-width: 992px) {
+    .relative-lg {
+        position: relative;
+    }
+    .video-wrapper {
+        margin-top: -6.5em;
+        z-index: 2;
+        height: 20em;
+        width: 29em;
+        border: 5px solid white;
+        border-radius: 15px;
+    }
+    .conf-img {
+        margin-top: -8em;
+        z-index: 2;
+        height: 23em;
+        width: auto;
+        border: 5px solid white;
+        
+    }
+}
+

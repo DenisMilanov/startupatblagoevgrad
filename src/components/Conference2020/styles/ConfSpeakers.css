@@ -1,0 +1,134 @@
+.conf-speakers {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.conf-speakers-title {
+  
+    position: absolute;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.conf-speakers-title span{
+  font-size: 1.3em;
+  border-bottom: 4px solid;
+    border-width: 0px 0px 4px 0px;
+    border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
+}
+
+.speaker-img {
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+}
+
+.flick-carousel {
+  height: 40em;
+  width: 100%;
+  max-width: 100vw;
+  
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+}
+  
+.cell-wrapper {
+  margin-top: 3em;
+  width: 15em;
+  height: 15em;
+
+  opacity: 0.5;
+
+  border: double 7px transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #fbbb06 0%, #ec7510 20%, #e45315 30%, #ce1c63 40%, #aa1638 50%,#731c64 60%, #a54093 70%, #2f6093 80%, #579ccb 90%, #2cb3ab 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+
+  -webkit-transform: scale(0.5) translateY(-150%);
+      -ms-transform: scale(0.5) translateY(-150%);
+          transform: scale(0.5) translateY(-150%);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  -o-transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+@media (min-width: 880px) {
+  .cell-wrapper {
+    margin-top: 8em;
+  }
+}
+
+.flick-carousel-cell {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.speaker-name, .speaker-tagline {
+  opacity: 0;
+  text-align: center;
+  transition: opacity 0.6s;
+}
+
+.speaker-tagline:hover{
+  cursor: pointer;
+  color: #99e6ff;
+}
+
+.speaker-tagline {
+  color: #00bfff;
+  display: none;
+}
+
+@media not all and (min-resolution:.001dpcm) { 
+  .speaker-name, .speaker-tagline {
+    transition: none;
+  }
+}
+
+.is-selected {
+  opacity: 1;
+  transform: translateY(35%);
+}
+
+.is-selected .speaker-name {
+  opacity: 1 !important;
+  margin-top: 1em;
+  font-size: 2em;
+}
+
+.is-selected .speaker-tagline {
+  opacity: 1 !important;
+  display: block !important;
+}
+
+.conf-speakers-modal .modal-content {
+  background-color: #222 !important;
+  color: white !important;
+  padding-bottom: 2em;
+}
+
+.conf-speakers-modal .modal-content .close{
+  color: white !important;
+}
+
+.speaker2020-video-wrapper {
+  margin: 0 auto;
+  max-width: 100%;
+  height: 24em;
+  width: 40em;
+}
+
+@media (max-width: 880px) {
+  .speaker2020-video-wrapper {
+    margin-top: -100px;
+  }
+}

@@ -1,0 +1,129 @@
+.team .container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.team-title {
+    margin-bottom: 2em;
+}
+
+.team-title span{
+    border-bottom: 4px solid;
+    border-width: 0px 0px 4px 0px; 
+    border-image: linear-gradient(to right, #fbbb06 5%, #ec7510 12.5%, #e45315 25%, #ce1c63 25%, #ce1c63 35%, #aa1638 50%, #731c64 50%, #a54093 66%, #a54093 75%, #2f6093 75%, #579ccb 87.5%, #2cb3ab 95%) 1;
+}
+
+.team .carousel {
+    margin-bottom: 4em;;
+}
+
+.team .carousel .carousel-control-prev, 
+.team .carousel .carousel-control-next{
+    width: 8% !important;
+}
+
+/* Hide arrow controls when carousel shows all members */
+.team .hide-carousel .carousel-control-prev, 
+.team .hide-carousel .carousel-control-next{
+    display: none;
+}
+
+/* Hide arrow controls on touchscreens */
+@media (pointer:coarse) { 
+    .team .carousel .carousel-control-prev, 
+    .team .carousel .carousel-control-next{
+        display: none;
+    }
+}
+
+.team .carousel .carousel-control-prev-icon {
+    margin-bottom: 2em;
+    margin-right: 25%;
+}
+
+.team .carousel .carousel-control-next-icon {
+    margin-bottom: 2em;
+    margin-left: 25%;
+}
+
+
+.team .fa-linkedin-square {
+    color: grey;
+    font-size: 2.3em;
+    margin: 0.4em;
+    margin-bottom: 1.5em;
+}
+
+.team .fa-linkedin-square:hover {
+    color: #0077B5;
+    cursor: pointer;
+}
+
+.bot-row {
+    background-color: #F3F3F3;
+    min-height: 10em;
+}
+
+.team-img {
+    height: 13em;
+    padding-left: 5%;
+    padding-top: 0.65em;
+    filter: drop-shadow(2px -2px 3px #222) brightness(1.1); 
+    margin-right: 10%;
+}
+
+@media (min-width: 768px) { 
+    .team-img {
+        padding-left: 10%;
+    }
+}
+
+.member-desc {
+    padding-top:1em;
+}
+
+.member-name {
+    text-transform:uppercase;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+@media (max-width: 576px) { 
+    .member-name {
+        word-spacing: 100vw;
+    }
+}
+
+.line {
+    border-bottom: 2px solid;
+    width: 3em;
+    margin: 0 auto;
+}
+
+.team .container-fluid .carousel .carousel-indicators li {
+    background-color: #999;
+}
+
+.team .container-fluid .carousel .carousel-indicators .active {
+    background-color: #444;
+}
+
+/* Hide indicators when carousel shows all members */
+.team .container-fluid .hide-carousel .carousel-indicators li {
+    display: none;
+}
+
+.team-desc {
+    font-size: 0.6em;
+    margin-top: 1em;
+    font-weight: 400;
+}
+
+/* Make the departments not take up the width of the whole screen on lg devices*/
+@media (min-width: 1000px) { 
+    .team .carousel, .team-desc {
+        width: 92vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} 

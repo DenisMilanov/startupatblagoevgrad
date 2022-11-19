@@ -1,0 +1,28 @@
+.was-validated .form-control:invalid {
+    border: 1px solid #ced4da !important;
+}
+
+.was-validated .form-control:valid {
+    border: 1px solid #ced4da !important;
+}
+
+.map {
+    border: 0;
+    width: 100%;
+    height: 55vh;
+}
+
+@media (max-width: 992px) { 
+    .map {
+        margin-top: 5em;
+    }
+}
+
+.submitButton {
+    border: none;
+    background-color: white;
+    color: #2cb3ab;
+    font-weight: bold;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+}

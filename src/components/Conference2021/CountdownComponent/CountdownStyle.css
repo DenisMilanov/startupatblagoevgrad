@@ -1,0 +1,60 @@
+.countdown-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.countdown-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10vw;
+    height: 10vw;
+}
+
+@media (max-width: 1000px) {
+    .countdown-svg {
+        display: none;
+    }
+}
+
+.countdown-item {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 30px;
+    margin: 10px;
+    padding-top: 10px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.countdown-item span {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}

@@ -29,24 +29,25 @@
     position: absolute;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 700px) {
     .layer {
-        left: -50vw;
+        left: 0vw;
+        
     }
 }
 
 .layer img {
-    width: max(100vw, 100vh);
+    width: max(100vw, 50vh);
 }
 
 .layer.front {
-    top: 0;
+    top: -5%;
 }
 
 .layer.middle {
-    top: 15%;
+    top: 16%;
 }
 
 .layer.back {
-    top: 20%;
+    top: 16%;
 }

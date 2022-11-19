@@ -51,11 +51,15 @@ function App() {
 						<StartUpApp lang="bg" />
 					</Route>
 
-					<Route path="/conference2020">
-						<Conference />
+					<Route path="/conference2022">
+						<Conf2022 />
 					</Route>
 
 					<Route path="/conference2021">
+						<Conf2021 />
+					</Route>
+
+					<Route path="/Conference">
 						<Conf2021 />
 					</Route>
 
@@ -81,10 +85,6 @@ function App() {
 
 					<Route path="/recruitment2022">
 						<LandingPage />
-					</Route>
-
-					<Route path="/conference2022">
-						<Conf2022 />
 					</Route>
 
 

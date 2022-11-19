@@ -10,7 +10,7 @@ import Speakers from "./components/Speakers.js";
 import Sponsors from "./components/Sponsors.js";
 import Team from "./components/Team.js";
 import Contact from "./components/Contact.js";
-import Conference from "./components/Conference2020/Conference.js";
+//import Conference from "./components/Conference2020/Conference.js";
 import Conf2021 from "./components/Conference2021/MainComponent/Conf2021";
 import Conf2022 from "./components/Conference2022/Main/Con22";
 
@@ -51,8 +51,8 @@ function App() {
 						<StartUpApp lang="bg" />
 					</Route>
 
-					<Route path="/conference2020">
-						<Conference />
+					<Route path="/conference2022">
+						<Conf2022 />
 					</Route>
 
 					<Route path="/conference2021">
@@ -81,10 +81,6 @@ function App() {
 
 					<Route path="/recruitment2022">
 						<LandingPage />
-					</Route>
-
-					<Route path="/conference2022">
-						<Conf2022 />
 					</Route>
 
 

@@ -2,33 +2,50 @@ import React, { useState } from "react";
 import "./Panels.css";
 import panels from "./panelsData";
 
-export default function Conf2021() {
+export default function Conf2022() {
     return (
-        <div className="panels">
-            <div className="panel-wrapper">
-                <h2>Panel 1</h2>
-                <div className="panel">
-                    {panels.panel1.map((speaker, index) => (
+        <div className="speakers">
+            <div className="speaker-wrapper">
+                <h2>Speaker 1</h2>
+                <div className="speaker">
+                    {/* {panels.panel1.map((speaker, index) => (
                         <Speaker speaker={speaker} key={index} />
-                    ))}
+                    ))} */}
+
+                    {speakers[0]}
                 </div>
             </div>
 
-            <div className="panel-wrapper">
-                <h2>Panel 2</h2>
-                <div className="panel">
-                    {panels.panel2.map((speaker, index) => (
+            <div className="speaker-wrapper">
+                <h2>Speaker 2</h2>
+                <div className="speaker">
+                    {/* {panels.panel1.map((speaker, index) => (
                         <Speaker speaker={speaker} key={index} />
-                    ))}
+                    ))} */}
+
+                    {speakers[1]}
                 </div>
             </div>
 
-            <div className="panel-wrapper">
-                <h2>Panel 3</h2>
-                <div className="panel">
-                    {panels.panel3.map((speaker, index) => (
+            <div className="speaker-wrapper">
+                <h2>Speaker 3</h2>
+                <div className="speaker">
+                    {/* {panels.panel1.map((speaker, index) => (
                         <Speaker speaker={speaker} key={index} />
-                    ))}
+                    ))} */}
+
+                    {speakers[2]}
+                </div>
+            </div>
+
+            <div className="speaker-wrapper">
+                <h2>Speaker 4</h2>
+                <div className="speaker">
+                    {/* {panels.panel1.map((speaker, index) => (
+                        <Speaker speaker={speaker} key={index} />
+                    ))} */}
+
+                    {speakers[3]}
                 </div>
             </div>
         </div>

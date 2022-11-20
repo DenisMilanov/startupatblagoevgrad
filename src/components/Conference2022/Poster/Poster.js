@@ -5,6 +5,7 @@ import middleLayer from "../media/middle.png";
 import frontLayer from "../media/front.png";
 import Speakers from "../Speakers/Speakers";
 import Footer from "../Footer/Footer";
+import Giveaway from "../Giveaway/Giveaway";
 
 export default function Poster() {
     return (
@@ -23,6 +24,7 @@ export default function Poster() {
                 <div className="layer front">
                     <img src={frontLayer} alt="" />
                     <Speakers />
+                    <Giveaway />
                     <Footer />
                 </div>
             </div>

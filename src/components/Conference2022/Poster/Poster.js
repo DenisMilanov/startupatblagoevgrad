@@ -3,6 +3,7 @@ import "./Poster.css";
 import backLayer from "../media/back.png";
 import middleLayer from "../media/middle.png";
 import frontLayer from "../media/front.png";
+import Speakers from "../Speakers/Speakers";
 
 export default function Poster() {
     return (
@@ -20,6 +21,7 @@ export default function Poster() {
             <div className="parallax_layer parallax_layer-front">
                 <div className="layer front">
                     <img src={frontLayer} alt="" />
+                    <Speakers />
                 </div>
             </div>
         </>

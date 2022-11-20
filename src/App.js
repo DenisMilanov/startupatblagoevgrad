@@ -59,8 +59,8 @@ function App() {
 						<Conf2021 />
 					</Route>
 
-					<Route path="/Conference">
-						<Conf2021 />
+					<Route path="/conference2020">
+						<Conference />
 					</Route>
 
 					<Route path="/weekend2022">

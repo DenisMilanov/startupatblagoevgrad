@@ -1,0 +1,142 @@
+.titlesWrapper {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    left: 50%;
+    transform: translate(-50%);
+}
+.titles {
+    margin-top: 1rem;
+    white-space: nowrap;
+    max-width: 100vw;
+
+    animation-fill-mode: forwards;
+    padding: 15px;
+    border-radius: 15px;
+    --baseFontSize: 2vw;
+}
+
+.plane {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+    border-radius: 4px;
+    height: auto;
+    max-width: 100%;
+    animation: plane 13s linear infinite;
+}
+
+@keyframes plane {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100%); }
+  }
+
+@keyframes fadeInBg {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+
+@media (max-width: 500px) {
+    .titles {
+        --baseFontSize: 7vw;
+    }
+    .presents {
+        font-size: 4vw;
+    }
+}
+
+
+.future {
+    opacity: 0;
+    font-family: "Verdana", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    text: #d2cfcf;
+    text-shadow: 6px 3px 2px #916817;
+    font-size: calc(var(--baseFontSize) + 9vw);
+    animation: fadeIn 0s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    line-height: 1em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.scrollDown {
+    text-align: center;
+    margin-top: 1em;
+
+    opacity: 0;
+    animation: fadeIn 2s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+.confButton {
+    background-color: #005f7f;
+    padding: 10px;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 1em auto;
+
+    opacity: 0;
+    animation: fadeIn 2s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+.confButton:hover {
+    background-color: #049aa5;
+    cursor: pointer;
+}
+
+.conf-masthead-title2 {
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #0066ff;
+}
+
+@media (min-width: 991px) {
+    .conf-masthead-title2 {
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 1200px){
+    .conf-masthead-title2 {
+        font-size: 5em;
+    }
+}
+
+.conf-title-wrapper {
+    top: 0;
+    margin-top: -1em;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+}
+
+.conf-title-wrapper .arrow {
+    margin-top: 2em;
+    height: 2em;
+    fill:white;
+}
+
+.conf-title-wrapper .arrow:hover {
+    fill: #0066ff;
+    cursor: pointer;
+}

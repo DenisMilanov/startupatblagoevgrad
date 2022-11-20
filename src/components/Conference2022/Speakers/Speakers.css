@@ -1,0 +1,462 @@
+.panels {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.panel-wrapper h2 {
+    text-align: center;
+}
+
+.panel-one {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #FA695E;
+    color: black;
+    max-width: 35rem;
+}
+
+.panel-two {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #7B4DB6;
+    color: black;
+    max-width: 35rem;
+}
+
+.panel-three {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #7BDEA2;
+    color: black;
+    max-width: 35rem;
+}
+
+.panel-four {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #FAC447;
+    color: black;
+    max-width: 35rem;
+}
+
+.panel-one .speaker-one {
+    max-width: 150vw;
+    background-color:  #9d3c48; /* #008a94; #f0faff;*/
+    border-radius: 15px;
+    padding: 12px 12px;
+    color: whitesmoke;
+    transition: background-color 0.5s ease;
+}
+
+.panel-four .speaker-four {
+    max-width: 150vw;
+    background-color:  #D4824E; /* #008a94; #f0faff;*/
+    border-radius: 15px;
+    padding: 12px 12px;
+    color: whitesmoke;
+    transition: background-color 0.5s ease;
+}
+
+.panel-two .speaker-two {
+    max-width: 150vw;
+    background-color:  #B88ACB; /* #008a94; #f0faff;*/
+    border-radius: 15px;
+    padding: 12px 12px;
+    color: whitesmoke;
+    transition: background-color 0.5s ease;
+}
+
+.panel-three .speaker-three {
+    max-width: 150vw;
+    background-color:  #37944C; /* #008a94; #f0faff;*/
+    border-radius: 15px;
+    padding: 12px 12px;
+    color: whitesmoke;
+    transition: background-color 0.5s ease;
+}
+
+.panel-one .speaker-one .main {
+    transition-duration: 1s;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.panel-two .speaker-two .main {
+    transition-duration: 1s;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.panel-three .speaker-three .main {
+    transition-duration: 1s;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.panel-four .speaker-four .main {
+    transition-duration: 1s;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.speaker:hover {
+    background-color: #00a59c;
+    cursor: pointer;
+}
+
+.panel-one .speaker-one .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+    gap: 20px;
+}
+
+.panel-two .speaker-two .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+    gap: 20px;
+}
+
+.panel-three .speaker-three .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+    gap: 20px;
+}
+
+.panel-four .speaker-four .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+    gap: 20px;
+}
+
+@media (max-width: 450px) {
+    .panel-one .speaker-one .body {
+        font-size: 1.3rem;
+        gap: 0;
+    }
+
+    .panel-two .speaker-two .body {
+        font-size: 1.3rem;
+        gap: 0;
+    }
+
+    .panel-three .speaker-three .body {
+        font-size: 1.3rem;
+        gap: 0;
+    }
+
+    .panel-four .speaker-four .body {
+        font-size: 1.3rem;
+        gap: 0;
+    }
+}
+
+.panel-one .speaker-one .body .name.Denitza {
+    font-size: 1.5rem;
+}
+
+.panel-two .speaker-two .body .name.Denitza {
+    font-size: 1.5rem;
+}
+
+.panel-three .speaker-three .body .name.Denitza {
+    font-size: 1.5rem;
+}
+
+.panel-four .speaker-four .body .name.Denitza {
+    font-size: 1.5rem;
+}
+.panel-one .speaker-one .speaker-thumb {
+    width: 8em;
+}
+
+.panel-two .speaker-two .speaker-thumb {
+    width: 8em;
+}
+
+.panel-three .speaker-three .speaker-thumb {
+    width: 8em;
+}
+
+.panel-four .speaker-four .speaker-thumb {
+    width: 8em;
+}
+
+.panel-one .speaker-one .header,
+.footer {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    margin-left: 7px;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.panel-two .speaker-two .header,
+.footer {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    margin-left: 7px;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.panel-three .speaker-three .header,
+.footer {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    margin-left: 7px;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.panel-four .speaker-four .header,
+.footer {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    margin-left: 7px;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.panel-one .speaker-one .header {
+    font-size: 0.7rem;
+}
+
+.panel-two .speaker-two .header {
+    font-size: 0.7rem;
+}
+
+.panel-three .speaker-three .header {
+    font-size: 0.7rem;
+}
+
+.panel-four .speaker-four .header {
+    font-size: 0.7rem;
+}
+.panel-one .speaker-one .footer {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+}
+
+.panel-two .speaker-two .footer {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+}
+
+.panel-three .speaker-three .footer {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+}
+
+.panel-four .speaker-four .footer {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+}
+
+.panel-one .speaker-one .footer .chip {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 2px 20px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.panel-two .speaker-two .footer .chip {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 2px 20px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.panel-three .speaker-three .footer .chip {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 2px 20px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.panel-four .speaker-four .footer .chip {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 2px 20px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.panel-one .speaker-one .footer .chip.businessSphere {
+    background-color: #008a94;
+}
+
+.panel-two .speaker-two .footer .chip.businessSphere {
+    background-color: #008a94;
+}
+
+.panel-three .speaker-three .footer .chip.businessSphere {
+    background-color: #008a94;
+}
+
+.panel-four .speaker-four .footer .chip.businessSphere {
+    background-color: #008a94;
+}
+
+.panel-one .speaker-one .company {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 2px 20px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    background-color: #00b590;
+}
+
+.panel-two .speaker-two .company {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 2px 20px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    background-color: #00b590;
+}
+
+.panel-three .speaker-three .company {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 2px 20px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    background-color: #00b590;
+}
+
+.panel-four .speaker-four .company {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 2px 20px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    background-color: #00b590;
+}
+.panel-one .speaker-one .fa-linkedin-square,
+.fa-facebook-square {
+    color: white;
+    font-size: 1.6em;
+}
+
+.panel-two .speaker-two .fa-linkedin-square,
+.fa-facebook-square {
+    color: white;
+    font-size: 1.6em;
+}
+
+.panel-three .speaker-three .fa-linkedin-square,
+.fa-facebook-square {
+    color: white;
+    font-size: 1.6em;
+}
+
+.panel-four .speaker-four .fa-linkedin-square,
+.fa-facebook-square {
+    color: white;
+    font-size: 1.6em;
+}
+
+.panel-one .speaker-one .fa-linkedin-square:hover,
+.fa-facebook-square:hover {
+    color: lightgray;
+    cursor: pointer;
+}
+
+.panel-two .speaker-two .fa-linkedin-square:hover,
+.fa-facebook-square:hover {
+    color: lightgray;
+    cursor: pointer;
+}
+
+.panel-three .speaker-three .fa-linkedin-square:hover,
+.fa-facebook-square:hover {
+    color: lightgray;
+    cursor: pointer;
+}
+
+.panel-four .speaker-four .fa-linkedin-square:hover,
+.fa-facebook-square:hover {
+    color: lightgray;
+    cursor: pointer;
+}
+
+.panel-one .speaker-one .bio {
+    margin-top: 15px;
+}
+
+.panel-two .speaker-two .bio {
+    margin-top: 15px;
+}
+.panel-three .speaker-three .bio {
+    margin-top: 15px;
+}
+.panel-four .speaker-four .bio {
+    margin-top: 15px;
+}
